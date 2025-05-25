@@ -56,6 +56,8 @@ let time = 180;
 
 //ssc
 if(title === "ssc"){
+  marks = 2;
+  nagativemarks = 0.5;
   scriptUrl = `https://script.google.com/macros/s/AKfycbwRMXg0tTAKHroxN-JL3DKIrD89k99Ckk5F0Dn18bLNLmEydXWYM0muivpEj6Z2TflQ/exec?action=get_questions&sheet=${encodeURIComponent(sheetName)}`;
   marksUrl = "https://script.google.com/macros/s/AKfycbxQ2u9rjHy8HQ-urQ_O7aZWhWBITCBbvhU_YSqXe9x1NA3kokNawgTQsYiGxY2oYV8TVw/exec";
   examtitle.textContent = "SSC";
