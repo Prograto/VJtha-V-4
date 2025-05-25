@@ -58,27 +58,27 @@ let time = 180;
 if(title === "ssc"){
   marks = 2;
   nagativemarks = 0.5;
+  time = 60;
   scriptUrl = `https://script.google.com/macros/s/AKfycbwRMXg0tTAKHroxN-JL3DKIrD89k99Ckk5F0Dn18bLNLmEydXWYM0muivpEj6Z2TflQ/exec?action=get_questions&sheet=${encodeURIComponent(sheetName)}`;
   marksUrl = "https://script.google.com/macros/s/AKfycbxQ2u9rjHy8HQ-urQ_O7aZWhWBITCBbvhU_YSqXe9x1NA3kokNawgTQsYiGxY2oYV8TVw/exec";
   examtitle.textContent = "SSC";
   document.getElementById("q").textContent = "100";
-  document.getElementById("t").textContent = "100";
+  document.getElementById("t").textContent = "60";
   document.getElementById('m').textContent = marks;
   document.getElementById("nm").textContent = nagativemarks;
-  time = 100;
   console.log(title, ":is loaing");
 }
 
 //Banks
 if(title === "bank"){
+  time = 60;
   scriptUrl = `https://script.google.com/macros/s/AKfycbyjpneX_rZ5B2vJv8NHxMBnzZn594Q9-RC2pjZKEVQ9dNTnAtdOHrwi3UzV56FEja9g/exec?action=get_questions&sheet=${encodeURIComponent(sheetName)}`;
   marksUrl = "https://script.google.com/macros/s/AKfycbzpJu-hcM-3q3GxTi2m3jL3NFhaZAG5l09DXTdIk-3v0cFXHdZw0U9TWwjMUZufm89-/exec";
   examtitle.textContent = "SSC";
   document.getElementById("q").textContent = "100";
-  document.getElementById("t").textContent = "100";
+  document.getElementById("t").textContent = "60";
   document.getElementById('m').textContent = marks;
   document.getElementById("nm").textContent = nagativemarks;
-  time = 100;
   console.log(title, ":is loaing");
 }
 
@@ -93,7 +93,6 @@ else if(title === "mains"){
   document.getElementById("t").textContent = "180";
   document.getElementById("m").textContent = marks;
   document.getElementById("nm").textContent = nagativemarks;
-  time = 100;
   console.log(title, ":is loaing");
 }
 
